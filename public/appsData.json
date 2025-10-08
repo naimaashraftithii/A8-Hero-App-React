@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "title": "Forest: Focus for Productivity",
+    "companyName": "Forest App",
+    "image": "../src/assets/image1.jpg",
+    "description": "Forest helps you stay focused by planting virtual trees while you work or study. Each tree grows as you stay off your phone, creating a virtual forest of your focus sessions. You can track your daily, weekly, and monthly productivity with visual stats. Earn rewards and unlock new tree species for consistent focus. Share your achievements with friends or compete on leaderboards. Forest helps reduce digital distractions and improves concentration. Ideal for students and professionals aiming for better time management.",
+    "size": 125,
+    "reviews": 200000,
+    "ratingAvg": 4.8,
+    "downloads": 500000,
+    "ratings": [
+      {"name": "1 star", "count": 1000},
+      {"name": "2 star", "count": 2000},
+      {"name": "3 star", "count": 5000},
+      {"name": "4 star", "count": 30000},
+      {"name": "5 star", "count": 160000}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Calm",
+    "companyName": "Calm Inc",
+    "image": "../src/assets/image10.jpg",
+    "description": "Calm provides guided meditation sessions to reduce stress and improve focus. Explore sleep stories, breathing exercises, and relaxing music. Set reminders to maintain a consistent mindfulness practice. Track your progress and see improvements over time. Join the Calm community to share insights and experiences. The app is suitable for beginners and advanced meditators alike. Calm helps improve sleep quality, focus, and overall mental well-being.",
+    "size": 95,
+    "reviews": 180000,
+    "ratingAvg": 4.7,
+    "downloads": 420000,
+    "ratings": [
+      {"name": "1 star", "count": 500},
+      {"name": "2 star", "count": 1200},
+      {"name": "3 star", "count": 6000},
+      {"name": "4 star", "count": 20000},
+      {"name": "5 star", "count": 90000}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "MyFitnessPal",
+    "companyName": "Under Armour",
+    "image": "../src/assets/image12.jpg",
+    "description": "MyFitnessPal tracks your nutrition and exercise to help you reach your fitness goals. Log meals, calories, and macronutrients with ease. Sync your workouts automatically with wearable devices. Set personal fitness goals and monitor progress daily. Access detailed reports with trends and insights. Connect with friends for motivation and share achievements. MyFitnessPal supports offline logging and provides healthy eating tips.",
+    "size": 110,
+    "reviews": 160000,
+    "ratingAvg": 4.6,
+    "downloads": 350000,
+    "ratings": [
+      {"name": "1 star", "count": 600},
+      {"name": "2 star", "count": 1300},
+      {"name": "3 star", "count": 5000},
+      {"name": "4 star", "count": 25000},
+      {"name": "5 star", "count": 95000}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Duolingo",
+    "companyName": "Duolingo Inc",
+    "image": "../src/assets/image5.jpg",
+    "description": "Duolingo makes learning a new language fun and engaging. Gamified lessons cover over 30 languages. Track daily progress and maintain streaks for motivation. Practice listening, reading, writing, and speaking skills. Personalized learning adapts to your strengths and weaknesses. Join language clubs to challenge friends and earn badges. Duolingo helps build consistent language habits effectively.",
+    "size": 90,
+    "reviews": 210000,
+    "ratingAvg": 4.8,
+    "downloads": 600000,
+    "ratings": [
+      {"name": "1 star", "count": 800},
+      {"name": "2 star", "count": 1500},
+      {"name": "3 star", "count": 6000},
+      {"name": "4 star", "count": 30000},
+      {"name": "5 star", "count": 170000}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Spotify",
+    "companyName": "Spotify Ltd",
+    "image": "../src/assets/image13.jpg",
+    "description": "Spotify streams millions of songs and podcasts on demand. Discover personalized playlists and trending tracks. Create and share your own playlists with friends. Offline mode lets you listen without an internet connection. Enjoy high-quality audio across multiple devices. Explore podcasts on topics from music to education. Spotify keeps you entertained anywhere, anytime.",
+    "size": 140,
+    "reviews": 500000,
+    "ratingAvg": 4.7,
+    "downloads": 800000,
+    "ratings": [
+      {"name": "1 star", "count": 2000},
+      {"name": "2 star", "count": 4000},
+      {"name": "3 star", "count": 15000},
+      {"name": "4 star", "count": 60000},
+      {"name": "5 star", "count": 420000}
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Evernote",
+    "companyName": "../src/assets/image6.jpg",
+    "image": "https://i.ibb.co/nrB9kQL/note-taking.jpg",
+    "description": "Evernote helps you capture ideas, notes, and projects in one place. Create text, image, audio, and PDF notes. Tag notes for better organization. Collaborate in shared notebooks. Set reminders and deadlines for important tasks. Sync across all devices seamlessly. Evernote is perfect for boosting productivity and managing your work efficiently.",
+    "size": 100,
+    "reviews": 140000,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      {"name": "1 star", "count": 500},
+      {"name": "2 star", "count": 1200},
+      {"name": "3 star", "count": 4000},
+      {"name": "4 star", "count": 20000},
+      {"name": "5 star", "count": 100000}
+    ]
+  },
+  {
+    "id": 7,
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "image": "../src/assets/image4.jpg",
+    "description": "TikTok allows you to create and watch short videos. Discover trending content worldwide. Apply filters, effects, and music tracks. Engage with creators and communities. Personalized feed adapts to your interests. Participate in challenges and collaborate creatively. TikTok supports easy sharing on other social platforms.",
+    "size": 120,
+    "reviews": 400000,
+    "ratingAvg": 4.6,
+    "downloads": 700000,
+    "ratings": [
+      {"name": "1 star", "count": 1500},
+      {"name": "2 star", "count": 3000},
+      {"name": "3 star", "count": 12000},
+      {"name": "4 star", "count": 50000},
+      {"name": "5 star", "count": 330000}
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Instagram",
+    "companyName": "Meta",
+    "image": "../src/assets/image7.jpg",
+    "description": "Instagram lets you share photos, videos, and stories with friends. Explore Reels and IGTV for creative content. Apply filters, stickers, and text overlays to enhance your posts. Direct message friends privately. Save favorite posts and organize collections. Follow creators to get inspired. Instagram provides a platform for creativity, engagement, and networking.",
+    "size": 110,
+    "reviews": 450000,
+    "ratingAvg": 4.7,
+    "downloads": 650000,
+    "ratings": [
+      {"name": "1 star", "count": 1200},
+      {"name": "2 star", "count": 2500},
+      {"name": "3 star", "count": 15000},
+      {"name": "4 star", "count": 50000},
+      {"name": "5 star", "count": 330000}
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Forest: Focus for Productivity",
+    "companyName": "Forest App",
+    "image": "https://i.ibb.co/Lx0XqzZ/focus-forest.jpg",
+    "description": "Forest helps you stay focused by planting virtual trees while you work or study. Each tree grows as you stay off your phone, creating a virtual forest of your focus sessions. You can track your daily, weekly, and monthly productivity with visual stats. Earn rewards and unlock new tree species for consistent focus. Share your achievements with friends or compete on leaderboards. Forest helps reduce digital distractions and improves concentration. Ideal for students and professionals aiming for better time management.",
+    "size": 125,
+    "reviews": 200000,
+    "ratingAvg": 4.8,
+    "downloads": 500000,
+    "ratings": [
+      {"name": "1 star", "count": 1000},
+      {"name": "2 star", "count": 2000},
+      {"name": "3 star", "count": 5000},
+      {"name": "4 star", "count": 30000},
+      {"name": "5 star", "count": 160000}
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Calm",
+    "companyName": "Calm Inc",
+    "image": "https://i.ibb.co/Bt7b1Fq/meditation-calm.jpg",
+    "description": "Calm provides guided meditation sessions to reduce stress and improve focus. Explore sleep stories, breathing exercises, and relaxing music. Set reminders to maintain a consistent mindfulness practice. Track your progress and see improvements over time. Join the Calm community to share insights and experiences. The app is suitable for beginners and advanced meditators alike. Calm helps improve sleep quality, focus, and overall mental well-being.",
+    "size": 95,
+    "reviews": 180000,
+    "ratingAvg": 4.7,
+    "downloads": 420000,
+    "ratings": [
+      {"name": "1 star", "count": 500},
+      {"name": "2 star", "count": 1200},
+      {"name": "3 star", "count": 6000},
+      {"name": "4 star", "count": 20000},
+      {"name": "5 star", "count": 90000}
+    ]
+  },
+  {
+    "id": 11,
+    "title": "MyFitnessPal",
+    "companyName": "Under Armour",
+    "image": "https://i.ibb.co/G7Z3kCj/fitness-tracker.jpg",
+    "description": "MyFitnessPal tracks your nutrition and exercise to help you reach your fitness goals. Log meals, calories, and macronutrients with ease. Sync your workouts automatically with wearable devices. Set personal fitness goals and monitor progress daily. Access detailed reports with trends and insights. Connect with friends for motivation and share achievements. MyFitnessPal supports offline logging and provides healthy eating tips.",
+    "size": 110,
+    "reviews": 160000,
+    "ratingAvg": 4.6,
+    "downloads": 350000,
+    "ratings": [
+      {"name": "1 star", "count": 600},
+      {"name": "2 star", "count": 1300},
+      {"name": "3 star", "count": 5000},
+      {"name": "4 star", "count": 25000},
+      {"name": "5 star", "count": 95000}
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Duolingo",
+    "companyName": "Duolingo Inc",
+    "image": "https://i.ibb.co/yhPbJmQ/language-learning.jpg",
+    "description": "Duolingo makes learning a new language fun and engaging. Gamified lessons cover over 30 languages. Track daily progress and maintain streaks for motivation. Practice listening, reading, writing, and speaking skills. Personalized learning adapts to your strengths and weaknesses. Join language clubs to challenge friends and earn badges. Duolingo helps build consistent language habits effectively.",
+    "size": 90,
+    "reviews": 210000,
+    "ratingAvg": 4.8,
+    "downloads": 600000,
+    "ratings": [
+      {"name": "1 star", "count": 800},
+      {"name": "2 star", "count": 1500},
+      {"name": "3 star", "count": 6000},
+      {"name": "4 star", "count": 30000},
+      {"name": "5 star", "count": 170000}
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Spotify",
+    "companyName": "Spotify Ltd",
+    "image": "https://i.ibb.co/Fxh7pZM/music-streaming.jpg",
+    "description": "Spotify streams millions of songs and podcasts on demand. Discover personalized playlists and trending tracks. Create and share your own playlists with friends. Offline mode lets you listen without an internet connection. Enjoy high-quality audio across multiple devices. Explore podcasts on topics from music to education. Spotify keeps you entertained anywhere, anytime.",
+    "size": 140,
+    "reviews": 500000,
+    "ratingAvg": 4.7,
+    "downloads": 800000,
+    "ratings": [
+      {"name": "1 star", "count": 2000},
+      {"name": "2 star", "count": 4000},
+      {"name": "3 star", "count": 15000},
+      {"name": "4 star", "count": 60000},
+      {"name": "5 star", "count": 420000}
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Evernote",
+    "companyName": "Evernote Corp",
+    "image": "https://i.ibb.co/nrB9kQL/note-taking.jpg",
+    "description": "Evernote helps you capture ideas, notes, and projects in one place. Create text, image, audio, and PDF notes. Tag notes for better organization. Collaborate in shared notebooks. Set reminders and deadlines for important tasks. Sync across all devices seamlessly. Evernote is perfect for boosting productivity and managing your work efficiently.",
+    "size": 100,
+    "reviews": 140000,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      {"name": "1 star", "count": 500},
+      {"name": "2 star", "count": 1200},
+      {"name": "3 star", "count": 4000},
+      {"name": "4 star", "count": 20000},
+      {"name": "5 star", "count": 100000}
+    ]
+  },
+  {
+    "id": 15,
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "image": "https://i.ibb.co/Xyz7FvP/short-video.jpg",
+    "description": "TikTok allows you to create and watch short videos. Discover trending content worldwide. Apply filters, effects, and music tracks. Engage with creators and communities. Personalized feed adapts to your interests. Participate in challenges and collaborate creatively. TikTok supports easy sharing on other social platforms.",
+    "size": 120,
+    "reviews": 400000,
+    "ratingAvg": 4.6,
+    "downloads": 700000,
+    "ratings": [
+      {"name": "1 star", "count": 1500},
+      {"name": "2 star", "count": 3000},
+      {"name": "3 star", "count": 12000},
+      {"name": "4 star", "count": 50000},
+      {"name": "5 star", "count": 330000}
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Instagram",
+    "companyName": "Meta",
+    "image": "https://i.ibb.co/Z2kYwGj/social-media.jpg",
+    "description": "Instagram lets you share photos, videos, and stories with friends. Explore Reels and IGTV for creative content. Apply filters, stickers, and text overlays to enhance your posts. Direct message friends privately. Save favorite posts and organize collections. Follow creators to get inspired. Instagram provides a platform for creativity, engagement, and networking.",
+    "size": 110,
+    "reviews": 450000,
+    "ratingAvg": 4.7,
+    "downloads": 650000,
+    "ratings": [
+      {"name": "1 star", "count": 1200},
+      {"name": "2 star", "count": 2500},
+      {"name": "3 star", "count": 15000},
+      {"name": "4 star", "count": 50000},
+      {"name": "5 star", "count": 330000}
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "image": "https://i.ibb.co/FXPQR1h/graphic-design.jpg",
+    "description": "Canva is a powerful graphic design tool for mobile devices. Create social media posts, presentations, and marketing materials easily. Access a library of templates and design elements. Collaborate with team members for projects. Adjust typography, colors, and layers with ease. Export designs in multiple formats. Canva empowers creativity on the go.",
+    "size": 130,
+    "reviews": 210000,
+    "ratingAvg": 4.7,
+    "downloads": 420000,
+    "ratings": [
+      {"name": "1 star", "count": 700},
+      {"name": "2 star", "count": 1200},
+      {"name": "3 star", "count": 5000},
+      {"name": "4 star", "count": 25000},
+      {"name": "5 star", "count": 180000}
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Notion",
+    "companyName": "Notion Labs",
+    "image": "https://i.ibb.co/HN87qqK/note-app.jpg",
+    "description": "Notion is an all-in-one workspace to organize notes, tasks, and projects. Create pages with text, tables, kanban boards, and databases. Collaborate with teams or share with friends. Templates make setup fast and easy. Track progress with dashboards and charts. Notion supports offline mode for uninterrupted workflow. Keep your work structured and accessible on mobile devices.",
+    "size": 140,
+    "reviews": 150000,
+    "ratingAvg": 4.8,
+    "downloads": 350000,
+    "ratings": [
+      {"name": "1 star", "count": 600},
+      {"name": "2 star", "count": 1000},
+      {"name": "3 star", "count": 4000},
+      {"name": "4 star", "count": 18000},
+      {"name": "5 star", "count": 125000}
+    ]
+  }
+]

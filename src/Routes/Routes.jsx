@@ -1,41 +1,35 @@
-import { createBrowserRouter } from 'react-router'
-import Products from '../Pages/Products'
-import Home from '../Pages/Home'
-import MainLayout from '../Layouts/MainLayout'
-import ErrorPage from '../Pages/ErrorPage'
-import Wishlist from '../Pages/Wishlist'
-import ProductDetails from '../Pages/ProductDetails'
+import { createBrowserRouter } from "react-router-dom";
+import MainLayout from "../Layouts/MainLayout";
+import Home from "../Pages/Home";
+import Products from "../Pages/Products"; // This is your "All Apps" page
+import Wishlist from "../Pages/Wishlist";
+import ProductDetails from "../Pages/ProductDetails";
+import ErrorPage from "../Pages/ErrorPage";
 
-// named export
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <MainLayout />,
     errorElement: <ErrorPage />,
-    hydrateFallbackElement: <p>Loading...</p>,
     children: [
       {
         index: true,
-        Component: Home,
+        element: <Home />,
       },
       {
-        path: '/products',
+        path: "apps",  // <-- Add this
         element: <Products />,
       },
       {
-        path: '/wishlist',
-        element: <Wishlist />,
+        path: "Installation",
+        element: <Installation />,
       },
       {
-        path: '/product/:id',
+        path: "product/:id",
         element: <ProductDetails />,
       },
     ],
   },
-  //   {
-  //     path: '*',
-  //     element: <ErrorPage />,
-  //   },
-])
+]);
 
-export default router
+export default router;

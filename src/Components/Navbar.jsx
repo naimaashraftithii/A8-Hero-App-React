@@ -26,8 +26,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/products" className={({ isActive }) => (isActive ? activeClass : "")}>
-                Products
+              <NavLink to="/Apps" className={({ isActive }) => (isActive ? activeClass : "")}>
+                Apps
               </NavLink>
             </li>
             <li>

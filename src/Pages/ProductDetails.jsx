@@ -1,52 +1,51 @@
-import React from 'react'
-import { useParams } from 'react-router'
-import useProducts from '../hooks/useProducts'
-import { updateList } from '../utils/localStorage'
+import React from "react";
+import { useParams } from "react-router-dom";
+import useApps from "../hooks/useProducts";
+import { installApp, getInstalledApps } from "../utils/localStorage";
+import Loader from "../Components/Loader";
+import ErrorCard from "../Components/ErrorCard";
 
 const ProductDetails = () => {
-  const { id } = useParams()
-  const { products, loading } = useProducts()
+  const { id } = useParams();
 
-  const product = products.find(p => p.id === Number(id))
+  // Use default empty array to prevent undefined errors
+  const { apps = [], loading } = useApps();
 
-  if (loading) return <p>Loading.......</p>
+  // Show loader while data is being fetched
+  if (loading) return <Loader />;
 
-  const { name, image, category, price, description } = product || {}
+  // Find the app by ID
+  const app = apps.find((a) => a.id === Number(id));
 
-  //   const handleAddToWishList = () => {
-  //     const existingList = JSON.parse(localStorage.getItem('wishlist'))
-  //     let updatedList = []
-  //     if (existingList) {
-  //       const isDuplicate = existingList.some(p => p.id === product.id)
-  //       if (isDuplicate) return alert('Sorry vai')
-  //       updatedList = [...existingList, product]
-  //     } else {
-  //       updatedList.push(product)
-  //     }
-  //     localStorage.setItem('wishlist', JSON.stringify(updatedList))
-  //   }
+  // Show error card if app not found
+  if (!app) return <ErrorCard type="app" />;
+
+  const { title, image, description, downloads, ratingAvg } = app;
+  const installedApps = getInstalledApps();
+  const isInstalled = installedApps.some((a) => a.id === app.id);
 
   return (
-    <div className='card bg-base-100 border shadow-sm'>
-      <figure className='h-84 overflow-hidden'>
-        <img className='w-full object-cover' src={image} alt='Shoes' />
+    <div className="card bg-base-100 border shadow-sm">
+      <figure className="h-64 overflow-hidden">
+        <img className="w-full object-cover" src={image} alt={title} />
       </figure>
-      <div className='card-body'>
-        <h2 className='card-title'>{name}</h2>
+      <div className="card-body">
+        <h2 className="card-title">{title}</h2>
         <p>{description}</p>
-        <p>Category: {category}</p>
-        <p>Price: ${price}</p>
-        <div className='card-actions justify-end'>
+        <p>Downloads: {downloads.toLocaleString()}</p>
+        <p>Rating: {ratingAvg}</p>
+        <div className="card-actions justify-end">
           <button
-            onClick={() => updateList(product)}
-            className='btn btn-outline'
+            onClick={() => installApp(app)}
+            className="btn btn-outline"
+            disabled={isInstalled}
           >
-            Add to Wishlist
+            {isInstalled ? "Installed" : "Install"}
           </button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetails
+export default ProductDetails;

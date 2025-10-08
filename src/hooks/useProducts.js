@@ -1,20 +1,19 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react'
+// src/hooks/useProducts.js
+import { useState, useEffect } from "react";
 
 const useProducts = () => {
-  const [products, setProducts] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [products, setProducts] = useState([]); // <-- make sure default is []
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true)
-    axios('../furnitureData.json')
-      .then(data => setProducts(data.data))
-      .catch(err => setError(err))
-      .finally(() => setLoading(false))
-  }, [])
+    fetch("/appsData.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
+      .catch((err) => console.error(err))
+      .finally(() => setLoading(false));
+  }, []);
 
-  return { products, loading, error }
-}
+  return { products, loading };
+};
 
-export default useProducts
+export default useProducts;

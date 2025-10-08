@@ -1,18 +1,6 @@
-import React from 'react'
-import { useRouteError } from 'react-router'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+import React from "react";
+import ErrorCard from "../Components/ErrorCard";
 
-const ErrorPage = () => {
-  const error = useRouteError()
+const ErrorPage = () => <ErrorCard type="page" />;
 
-  return (
-    <>
-      <Navbar />
-      <div>{error.message}</div>
-      <Footer />
-    </>
-  )
-}
-
-export default ErrorPage
+export default ErrorPage;

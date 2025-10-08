@@ -70,6 +70,7 @@ const HeroSection = () => {
 
   </div>
 </section>
+ <section></section>
 
     </>
   );

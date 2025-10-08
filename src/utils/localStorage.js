@@ -1,35 +1,23 @@
-// get
+// localStorage.js
+
+export const installApp = (app) => {
+  let installed = JSON.parse(localStorage.getItem("installedApps")) || [];
+  if (!installed.find(a => a.id === app.id)) {
+    installed.push(app);
+    localStorage.setItem("installedApps", JSON.stringify(installed));
+  }
+};
+
+export const getInstalledApps = () => {
+  return JSON.parse(localStorage.getItem("installedApps")) || [];
+};
+
 export const loadWishlist = () => {
-  try {
-    const data = localStorage.getItem('wishlist')
-    return data ? JSON.parse(data) : []
-  } catch (err) {
-    console.log(err)
-    return []
-  }
-}
+  return JSON.parse(localStorage.getItem("wishlist")) || [];
+};
 
-// save
-export const updateList = product => {
-  const wishlist = loadWishlist()
-
-  try {
-    const isDuplicate = wishlist.some(p => p.id === product.id)
-    if (isDuplicate) return alert('Already added in wishlist')
-    const updatedWishlist = [...wishlist, product]
-    localStorage.setItem('wishlist', JSON.stringify(updatedWishlist))
-  } catch (err) {
-    console.log(err)
-  }
-}
-
-// delete
-export const removeFromWishlist = id => {
-  const wishlist = loadWishlist()
-  try {
-    const updatedWishlist = wishlist.filter(p => p.id !== id)
-    localStorage.setItem('wishlist', JSON.stringify(updatedWishlist))
-  } catch (err) {
-    console.log(err)
-  }
-}
+export const removeFromWishlist = (id) => {
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  wishlist = wishlist.filter(item => item.id !== id);
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+};
