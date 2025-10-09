@@ -20,7 +20,7 @@ const ProductDetails = () => {
   const { products = [], loading } = useProducts();
   const [app, setApp] = useState(null);
 
-  // find app by id whenever products or id change
+  // find app 
   useEffect(() => {
     const found = products.find((p) => p.id === Number(id));
     setApp(found || null);
@@ -99,17 +99,17 @@ const ProductDetails = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5">
             <Stat
-              icon="/src/assets/icon-downloads.png"
+              icon="/icon-downloads.png"
               label="Downloads"
               value={downloads}
             />
             <Stat
-              icon="/src/assets/icon-ratings.png"
+              icon="/icon-ratings.png"
               label="Average Ratings"
               value={ratingAvg}
             />
             <Stat
-              icon="/src/assets/icon-review.png"
+              icon="/icon-review.png"
               label="Total Reviews"
               value={
                 typeof reviews === "number" ? reviews.toLocaleString() : reviews

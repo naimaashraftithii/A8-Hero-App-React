@@ -1,4 +1,4 @@
-// src/Pages/Home.jsx
+
 import React from "react";
 import HeroSection from "./HeroSection";
 
@@ -17,7 +17,7 @@ const Home = () => {
       
 
       <section className="max-w-screen-xl mx-auto px-4 mb-5 md:px-8 py-12 space-y-8">
-        {/* Section Title */}
+        {/* Section Top */}
         <div className="text-center mb-5">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             Trending Apps
@@ -27,7 +27,7 @@ const Home = () => {
           </p>
         </div>
 
-        {/* App Grid */}
+        {/* App Section */}
         {loading ? (
           <SkeletonLoader count={8} />
         ) : (
@@ -40,7 +40,7 @@ const Home = () => {
           </div>
         )}
 
-        {/* Show All Button */}
+        {/*  Button */}
         <div className="text-center">
           <Link
             to="/apps"

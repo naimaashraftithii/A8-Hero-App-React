@@ -7,9 +7,6 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 
-
-
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
