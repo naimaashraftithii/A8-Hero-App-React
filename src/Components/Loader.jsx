@@ -2,11 +2,11 @@ import React from "react";
 import logo from "../assets/logo.png";
 
 const Loader = () => (
-  <div className="flex justify-center items-center h-80">
+  <div className="flex items-center justify-center min-h-[60vh]">
     <img
       src={logo}
-      alt="Loading...Await..!!"
-      className="w-20 h-20 animate-spin-slow"
+      alt="Loading"
+      className="w-20 h-20 select-none pointer-events-none"
     />
   </div>
 );

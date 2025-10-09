@@ -5,37 +5,20 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="bg-[#F1F5E8] rounded-lg p-3 hover:shadow-lg transition-all duration-300">
-      {/* Image */}
       <div className="overflow-hidden rounded-lg h-40 w-full mb-3">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover rounded-md"
-        />
+        <img src={image} alt={title} className="w-full h-full object-cover rounded-md" />
       </div>
 
-      {/* Title */}
       <h2 className="text-base font-semibold mb-3 line-clamp-1">{title}</h2>
 
-      {/* Bottom Icons */}
       <div className="flex justify-between items-center">
-        {/* Downloads */}
         <div className="flex items-center gap-1 px-2 py-1 rounded bg-[#E7F9F0]">
-          <img
-            src="/src/assets/icon-downloads.png"
-            alt="Downloads"
-            className="w-4 h-4"
-          />
-          <span className="text-[#00D390] text-sm font-medium">{downloads}M</span>
+          <img src="/src/assets/icon-downloads.png" alt="Downloads" className="w-4 h-4" />
+          <span className="text-[#00D390] text-sm font-medium">{downloads}</span>
         </div>
 
-        {/* Rating */}
         <div className="flex items-center gap-1 px-2 py-1 rounded bg-[#FFF0E1]">
-          <img
-            src="/src/assets/icon-ratings.png"
-            alt="Rating"
-            className="w-4 h-4"
-          />
+          <img src="/src/assets/icon-ratings.png" alt="Rating" className="w-4 h-4" />
           <span className="text-[#FF8811] text-sm font-medium">{ratingAvg}</span>
         </div>
       </div>

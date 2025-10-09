@@ -1,8 +1,9 @@
-@keyframes spin-slow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+// tailwind.config.js
+import daisyui from "daisyui";
 
-.animate-spin-slow {
-  animation: spin-slow 2s linear infinite;
-}
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  theme: { extend: {} },
+  plugins: [daisyui], // remove if you don't use daisyUI
+};
