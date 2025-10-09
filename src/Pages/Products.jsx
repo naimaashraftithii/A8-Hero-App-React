@@ -1,3 +1,4 @@
+// src/Pages/Products.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
@@ -10,7 +11,7 @@ const Products = () => {
 
   const term = search.trim().toLowerCase();
   const filtered = term
-    ? products.filter((p) => (p.title || "").toLowerCase().includes(term))
+    ? products.filter((p) => p.title.toLowerCase().includes(term))
     : products;
 
   return (
@@ -27,9 +28,21 @@ const Products = () => {
       </div>
 
       {loading ? (
-        <SkeletonLoader count={8} />
+        <SkeletonLoader count={12} />
       ) : filtered.length === 0 ? (
-        <p className="text-center text-gray-500 mt-8">No App Found</p>
+        // ✅ Wrap the image + text inside a div
+        <div className="text-center mt-10">
+          <img
+              src="../assets/App-Error.png"
+              alt="No apps found"
+              className="
+              mx-auto w-64 opacity-80
+              transition-all duration-700 ease-in-out
+              transform hover:scale-110 hover:rotate-6 hover:opacity-100
+             animate-fadeIn"/>
+
+          {/* <p className="text-gray-500 mt-4 text-lg font-medium">No App Found</p> */}
+        </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {filtered.map((app) => (

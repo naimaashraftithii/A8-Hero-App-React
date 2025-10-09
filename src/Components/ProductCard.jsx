@@ -4,9 +4,13 @@ const ProductCard = ({ product }) => {
   const { title, image, downloads, ratingAvg } = product;
 
   return (
-    <div className="bg-[#F1F5E8] rounded-lg p-3 hover:shadow-lg transition-all duration-300">
+    <div className="bg-gray border-sky-200 rounded-lg p-3 hover:shadow-lg transition-all duration-300">
       <div className="overflow-hidden rounded-lg h-40 w-full mb-3">
-        <img src={image} alt={title} className="w-full h-full object-cover rounded-md" />
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full bg-amber-100 object-cover rounded-md"
+        />
       </div>
 
       <h2 className="text-base font-semibold mb-3 line-clamp-1">{title}</h2>

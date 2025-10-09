@@ -39,29 +39,29 @@ const HeroSection = () => {
         />
       </section>
 
-      {/* 3. Bottom Stats Section */}
-      <section className="w-full bg-gradient-to-r from-indigo-600 to-purple-500 text-white py-20 -mt-22.5">
+      {/* Bottom  Section */}
+  <section className="w-full bg-gradient-to-r from-indigo-600 to-purple-500 text-white py-20 -mt-22.5">
   <div className="text-2xl md:text-4xl font-extrabold mb-8 text-center drop-shadow-lg">
     <h1>Trusted by Millions, Built for You</h1>
   </div>
 
   <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-around px-6 gap-6">
 
-    {/* Stats 1 */}
+    {/* box-1 */}
     <div className="text-center md:text-center p-6 rounded-lg transition duration-300 hover:bg-white/20 hover:text-yellow-400 cursor-pointer">
       <p className="text-xs pb-2 transition duration-300 hover:text-yellow-400">Total Downloads</p>
       <h3 className="text-5xl font-bold p-1 transition duration-300 hover:text-yellow-400">29.6M</h3>
       <p className="text-xs text-indigo-200 pt-2 transition duration-300 hover:text-yellow-400">21% More Than Last Month</p>
     </div>
 
-    {/* Stats 2 */}
+    {/* box- 2 */}
     <div className="text-center md:text-center p-6 rounded-lg transition duration-300 hover:bg-white/20 hover:text-yellow-400 cursor-pointer">
       <p className="text-xs pb-2 transition duration-300 hover:text-yellow-400">Total Reviews</p>
       <h3 className="text-5xl font-bold p-1 transition duration-300 hover:text-yellow-400">906K</h3>
       <p className="text-xs text-indigo-200 pt-2 transition duration-300 hover:text-yellow-400">40% More Than Last Month</p>
     </div>
 
-    {/* Stats 3 */}
+    {/*box- 3 */}
     <div className="text-center md:text-center p-6 rounded-lg transition duration-300 hover:bg-white/20 hover:text-green-400 cursor-pointer">
       <p className="text-xs pb-2 transition duration-300 hover:text-green-400">Active Apps</p>
       <h3 className="text-5xl font-bold p-1 transition duration-300 hover:text-green-400">132+</h3>
@@ -70,7 +70,6 @@ const HeroSection = () => {
 
   </div>
 </section>
- <section></section>
 
     </>
   );

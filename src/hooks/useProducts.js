@@ -1,16 +1,15 @@
 // src/hooks/useProducts.js
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import appsData from "/public/appsData.json";
 
 const useProducts = () => {
-  const [products, setProducts] = useState([]); // <-- make sure default is []
+  const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/appsData.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error(err))
-      .finally(() => setLoading(false));
+    // simulate fetch delay (optional)
+    setProducts(appsData);
+    setLoading(false);
   }, []);
 
   return { products, loading };

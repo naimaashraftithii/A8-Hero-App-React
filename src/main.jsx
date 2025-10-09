@@ -14,26 +14,3 @@ createRoot(document.getElementById("root")).render(
     <ToastContainer position="bottom-right" autoClose={2000} />
   </StrictMode>
 );
-
-// {
-//   path: "/product/:id",
-//   element: <ProductDetails />,
-// }
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     {/* Declarative Mode */}
-//     {/* <BrowserRouter>
-//       <Routes>
-//         <Route path='/secret' element={<App />} />
-//       </Routes>
-//     </BrowserRouter> */}
-//     {/* Data Mode */}
-//     <RouterProvider router={router} />
-//      {/* <RouterProvider router={router} /> */}
-//       <React.StrictMode>
-//     <RouterProvider router={router} />
-//     </React.StrictMode>
-//     <ToastContainer position="bottom-right" autoClose={2000} />
-//   </StrictMode>
-// )
