@@ -1,53 +1,30 @@
+
 import React from "react";
-import "../styles/loader.css"; 
+import logo from "../assets/logo.png";
 
-const Loader = ({ fullscreen = false, size = "md" }) => {
-  // size 
-  const sizes = {
-    sm: { wrap: 44, logo: 30, gap: "0.5rem", font: "1.4rem" },
-    md: { wrap: 56, logo: 38, gap: "0.6rem", font: "1.9rem" },
-    lg: { wrap: 68, logo: 46, gap: "0.7rem", font: "2.2rem" },
-  };
-  const s = sizes[size] ?? sizes.md;
-
-  return (
-    <div className={fullscreen ? "loader-screen" : ""}>
-      <div
-        className="loader loader-appear"
-        style={{ gap: s.gap }}
-        aria-label="Loading"
-        role="status"
-      >
-        <span
-          className="loader__word"
-          style={{ fontSize: s.font }}
-          aria-hidden="true"
-        >
-          L
-        </span>
-
-        <span
-          className="loader__logoWrap"
-          style={{ width: s.wrap, height: s.wrap }}
-        >
-          <img
-            src="/public/logo.png"   
-            alt="Loading"
-            className="loader__logo"
-            style={{ width: s.logo, height: s.logo }}
-          />
-        </span>
-
-        <span
-          className="loader__word"
-          style={{ fontSize: s.font }}
-          aria-hidden="true"
-        >
-          OADING
-        </span>
-      </div>
-    </div>
-  );
+const SIZES = {
+  sm: "w-12 h-12",
+  md: "w-16 h-16",
+  lg: "w-24 h-24",
 };
 
-export default Loader;
+export default function Loader({ fullscreen = false, size = "md", label = "Loading..." }) {
+  const sizeClass = SIZES[size] || SIZES.md;
+
+  const content = (
+    <div className="flex flex-col items-center justify-center gap-3">
+      <img
+        src={logo}
+        alt="Loading"
+        className={`select-none pointer-events-none ${sizeClass} logo-spin`}
+      />
+      <p className="text-sm text-gray-500 tracking-wide">{label}</p>
+    </div>
+  );
+
+  if (!fullscreen) return content;
+
+  return (
+    <div className="min-h-[60vh] flex items-center justify-center">{content}</div>
+  );
+}

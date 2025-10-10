@@ -1,6 +1,5 @@
-
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
@@ -10,23 +9,24 @@ import ProductDetails from "../Pages/ProductDetails";
 import ErrorPage from "../Pages/ErrorPage";
 import Loader from "../Components/Loader";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <MainLayout />,
     errorElement: <ErrorPage />,
-    hydrateFallbackElement: <Loader fullscreen size="sm" />, 
+    hydrateFallbackElement: <Loader fullscreen size="sm" label="Loading..." />,
     children: [
       { index: true, element: <Home /> },
-      { path: "/products", element: <Products /> },
-      { path: "/apps", element: <Products /> },
-      { path: "/installation", element: <Installation /> },
-      { path: "/product/:id", element: <ProductDetails /> },
+      { path: "products", element: <Products /> },
+      { path: "apps", element: <Products /> },
+      { path: "installation", element: <Installation /> },
+      { path: "product/:id", element: <ProductDetails /> },
     ],
   },
 ]);
 
 export default router;
+
 
 
 // const router = createBrowserRouter([

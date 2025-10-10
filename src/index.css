@@ -7,17 +7,23 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.9) rotate(-5deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
+@keyframes logo-rotate {
+  from { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.05); }
+  to   { transform: rotate(360deg) scale(1); }
+}
+.logo-spin {
+  animation: logo-rotate 1.6s linear infinite;
+  transition: transform 300ms ease;
+}
+.logo-spin:hover {
+  transform: scale(1.08);
 }
 
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 .animate-fadeIn {
-  animation: fadeIn 0.8s ease-in-out;
+  animation: fade-in 400ms ease both;
 }

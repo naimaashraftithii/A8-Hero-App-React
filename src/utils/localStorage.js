@@ -1,4 +1,4 @@
-// src/utils/localStorage.js
+
 const KEY = "installedApps";
 
 export const installApp = (app) => {
