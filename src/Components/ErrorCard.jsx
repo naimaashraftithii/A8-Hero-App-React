@@ -6,15 +6,15 @@ const ErrorCard = ({ type = "app" }) => {
 
   switch(type){
     case "app":
-      imgSrc = "/src/assets/App-Error.png";
+      imgSrc = "/App-Error.png";
       message = "Oops! App not found.";
       break;
     case "page":
-      imgSrc = "/src/assets/error-404.png";
+      imgSrc = "/error-404.png";
       message = "404 - Page Not Found";
       break;
     default:
-      imgSrc = "/src/assets/error-404.png";
+      imgSrc = "/error-404.png";
       message = "Something went wrong";
   }
 
