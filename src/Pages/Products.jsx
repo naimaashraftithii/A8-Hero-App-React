@@ -20,6 +20,15 @@ export default function Products() {
   return (
     <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8">
       {/* Top bar */}
+      <div className="text-center">
+             <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-black drop-shadow-lg">
+                 Our All Applications
+              </h2>
+
+        <p className="pt-4 md:pt-6 text-sm md:text-base text-[#627382] max-w-2xl mx-auto mb-8 drop-shadow-md">
+         Explore All Apps on the Market developed by us. We code for Millions
+        </p>
+      </div>
       <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 sm:justify-between sm:items-center mb-6">
         <div className="font-medium">Total Apps: {filtered.length}</div>
         <input
