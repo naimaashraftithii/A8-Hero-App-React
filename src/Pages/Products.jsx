@@ -40,7 +40,7 @@ export default function Products() {
         />
       </div>
 
-      {/* Empty state */}
+      {/* Zero state */}
       {filtered.length === 0 ? (
         <div className="text-center mt-10">
           <img
@@ -49,6 +49,7 @@ export default function Products() {
             className="mx-auto w-56 opacity-90 animate-fadeIn"
           />
           <p className="text-gray-500 mt-4">No App Found</p>
+          
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">

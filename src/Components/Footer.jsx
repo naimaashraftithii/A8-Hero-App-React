@@ -13,7 +13,7 @@ const Footer = () => {
           <h2 className="text-lg font-semibold text-white tracking-wide">HERO.IO</h2>
         </div>
 
-        {/* Right - Social Links */}
+        {/* Right Side*/}
         <div className="flex flex-col items-center md:items-end gap-2">
           <span className="text-l font-bold uppercase tracking-wide text-gray-400 ">
             Social Links

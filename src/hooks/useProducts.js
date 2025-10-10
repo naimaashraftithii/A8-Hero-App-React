@@ -7,10 +7,11 @@ const useProducts = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    //  fetch delay 
+    //  fetch 
     setProducts(appsData);
     setLoading(false);
-  }, []);
+  }, 
+  []);
 
   return { products, loading };
 };

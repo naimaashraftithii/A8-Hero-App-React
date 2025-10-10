@@ -5,6 +5,7 @@ import { getInstalledApps, removeInstalledApp } from "../utils/localStorage";
 import { toast } from "react-toastify";
 
 
+
 const parseDownloads = (value) => {
   if (!value && value !== 0) return 0;
   if (typeof value === "number") return value;
@@ -25,6 +26,7 @@ const Installation = () => {
   useEffect(() => {
     setApps(getInstalledApps());
   }, []);
+
 
   const handleUninstall = (id) => {
     removeInstalledApp(id);
@@ -47,6 +49,7 @@ const Installation = () => {
   }, [apps, sortOrder]);
 
   
+
   if (apps.length === 0) {
     return (
       <div className="max-w-screen-md mx-auto px-4 md:px-8 py-14 text-center">
@@ -55,7 +58,7 @@ const Installation = () => {
           Explore All Trending Apps on the Market developed by us
         </p>
         <img
-          src="/src/assets/App-Error.png"
+          src="/App-Error.png"
           alt="No apps found"
           className="mx-auto w-56 opacity-90 transition-all duration-500 ease-in-out hover:scale-105 hover:rotate-3"
         />
@@ -95,6 +98,7 @@ const Installation = () => {
           <option value="low-high">Low-High</option>
         </select>
       </div>
+      
       {/* product Grid */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">

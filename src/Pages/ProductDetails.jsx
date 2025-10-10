@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import useProducts from "../hooks/useProducts";
 
 const Stat = ({ icon, label, value }) => (
+  
   <div className="flex items-center gap-3 bg-base-100 border rounded-xl px-4 py-3">
     <img src={icon} alt={label} className="w-8 h-8 object-contain" />
     <div>
@@ -41,6 +42,7 @@ const ProductDetails = () => {
       alert("Already installed!");
       navigate("/installation");
       return;
+
     }
     list.push(app);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
@@ -89,6 +91,7 @@ const ProductDetails = () => {
 
         <div className="md:col-span-3 flex flex-col">
           <h1 className="text-3xl font-extrabold leading-tight">{title}</h1>
+
           <p className="text-sm mt-1">
             Developed by{" "}
             <span className="bg-gradient-to-r from-[#7f00ff] to-[#e100ff] bg-clip-text text-transparent font-semibold">
@@ -134,6 +137,7 @@ const ProductDetails = () => {
         </div>
       </div>
 
+
       {/* Ratings bars */}
       <div className=" rounded-2xl p-6">
         <h2 className="text-lg font-semibold mb-4">Ratings</h2>
@@ -145,6 +149,7 @@ const ProductDetails = () => {
                 className="h-3 bg-orange-400 rounded-md"
                 style={{ width: `${star * 20}%` }}
               />
+
             </div>
           </div>
         ))}
