@@ -5,6 +5,12 @@ A visually stunning, feature-rich React application that showcases apps, provide
 Built with **React**, **Tailwind CSS**, **DaisyUI**, **React Router**, and **React Toastify**.
 
 ---
+<!-- Typing SVG -->
+<p align="center">
+  <img src="https://github.com/naimaashraftithii/A8-Hero-App-React/blob/main/HERO_IO.png" />
+</p>
+
+Live Link: https://zesty-fenglisu-d5e062.netlify.app/
 
 
 ## 🧾 Table of Contents
